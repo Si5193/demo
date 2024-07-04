@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLE Rör AB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header" class="header navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <img src="https://i.imgur.com/bTsqxe9.png" alt="MLE Rör AB Logotyp" class="header-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">Hur fungerar det?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quote">Offertförfrågan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Om oss</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link social-icon" href="https://www.facebook.com/företagets-sida" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link social-icon" href="https://www.instagram.com/företagets-sida" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="video-container" id="home">
+        <video autoplay muted loop playsinline id="background-video">
+            <source src="https://videos.pexels.com/video-files/5697985/5697985-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <img src="https://i.imgur.com/bTsqxe9.png" alt="MLE Rör AB Logotyp" class="hero-logo">
+            <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('how-it-works')">Hur fungerar det?</button>
+            <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('quote')">Begär offert</button>
+        </div>
+    </div>
+    <main>
+        <section id="how-it-works" class="section fade-in">
+            <div class="container">
+                <h2>Hur fungerar det?</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="step-icon">
+                            <i class="material-icons md-36">filter_1</i>
+                        </div>
+                        <h3>Kontakta oss</h3>
+                        <p>Beskriv kortfattat vad du behöver hjälp med och skicka en offertförfrågan.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-icon">
+                            <i class="material-icons md-36">filter_2</i>
+                        </div>
+                        <h3>Vi Kontaktar Dig</h3>
+                        <p>Vi återkommer med ett förslag på lösning och en offert för det arbete som ska utföras.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="step-icon">
+                            <i class="material-icons md-36">filter_3</i>
+                        </div>
+                        <h3>Arbetet Utförs</h3>
+                        <p>Vi utför arbetet enligt överenskommelse med hög kvalitet och service.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('quote')">Offert</button>
+                </div>
+            </div>
+        </section>
+        <hr class="section-divider">
+        <section id="quote" class="section fade-in">
+            <div class="container">
+                <h2>Offertförfrågan</h2>
+                <form id="quote-form" class="quote-form">
+                    <div class="form-group">
+                        <label for="name">Namn:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="text" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Beskrivning:</label>
+                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button btn btn-secondary mt-3">Skicka</button>
+                </form>
+            </div>
+        </section>
+        <hr class="section-divider">
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2>Om oss</h2>
+                <p>MLE Rör AB är ett VVS-företag som erbjuder högkvalitativa tjänster med fokus på bra service och kundnöjdhet. Vi hanterar allt från installationer till reparationer och underhåll av VVS-system.</p>
+                <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('contact')">Kontakta oss</button>
+            </div>
+        </section>
+        <hr class="section-divider">
+        <section id="contact" class="section fade-in">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>Telefon: 042-123456</p>
+                <p>E-post: <a href="mailto:Info@mle.se">Info@mle.se</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 MLE Rör AB. Alla rättigheter förbehållna.</p>
+            <p>Kontakt: <a href="tel:042-123456">042-123456</a> | <a href="mailto:Info@mle.se">Info@mle.se</a></p>
+        </div>
+    </footer>
+    <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
