@@ -195,7 +195,7 @@ body {
 .footer {
     text-align: center;
     padding: 1rem;
-    background: #0056b3; /* Blue background for footer */
+    background: linear-gradient(135deg, #fff 0%, #ccc 100%); /* graygradient background for footer */
     color: white;
 }
 
@@ -221,3 +221,23 @@ body {
     background: #0056b3; /* Blue background on hover */
     color: white;
 }
+
+/* Facebook Post Styles */
+.facebook-post {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: transparent; /* Change to transparent */
+}
+
+.facebook-post iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove border */
+}
+
