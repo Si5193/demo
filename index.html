@@ -94,7 +94,7 @@
         <section id="quote" class="section fade-in">
             <div class="container">
                 <h2>Offertförfrågan</h2>
-                <form id="quote-form" class="quote-form">
+                <form id="quote-form" class="quote-form" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name">Namn:</label>
                         <input type="text" id="name" name="name" class="form-control" required>
@@ -108,8 +108,24 @@
                         <input type="email" id="email" name="email" class="form-control" required>
                     </div>
                     <div class="form-group">
+                        <label for="service">Välj område:</label>
+                        <select id="service" name="service" class="form-control" required>
+                            <option value="">Välj ett alternativ</option>
+                            <option value="badrum">Badrum</option>
+                            <option value="värmepump">Värmepump</option>
+                            <option value="golvvärme">Golvvärme</option>
+                            <option value="kök">Kök</option>
+                            <option value="avlopp">Avlopp</option>
+                            <!-- Lägg till fler alternativ här -->
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="message">Beskrivning:</label>
                         <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="file">Bifoga bild/video:</label>
+                        <input type="file" id="file" name="file" class="form-control" accept="image/*,video/*">
                     </div>
                     <button type="submit" class="form-button btn btn-secondary mt-3">Skicka</button>
                 </form>
