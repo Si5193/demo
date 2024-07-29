@@ -106,8 +106,8 @@ body {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     border: none;
-    background: linear-gradient(135deg, #000 0%, #555 100%); /* Black gradient buttons */
-    color: white;
+    background: linear-gradient(135deg, #fff 0%, #ccc 100%); /* White/Gray gradient buttons */
+    color: black;
     cursor: pointer;
     transition: background 0.3s, color 0.3s, opacity 0.3s; /* Lägg till en övergångseffekt */
 }
@@ -117,8 +117,8 @@ body {
 }
 
 .hero-button:hover, .form-button:hover, .section-button:hover {
-    background: linear-gradient(135deg, #555 0%, #000 100%); /* Darker black gradient on hover */
-    color: white;
+    background: linear-gradient(135deg, #ccc 0%, #fff 100%); /* Darker white/gray gradient on hover */
+    color: black;
 }
 
 /* Section Styles */
@@ -127,7 +127,7 @@ body {
     margin-top: 5rem; /* Justera margin-top för att minska avstånd */
     position: relative;
     z-index: 2;
-    background: linear-gradient(135deg, #000 0%, #333 100%); /* Black gradient background */
+    background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%); /* White/Gray gradient background */
     backdrop-filter: blur(10px); /* För att ge en suddig effekt på bakgrunden */
     overflow: hidden;
 }
@@ -180,15 +180,15 @@ body {
 .form-button {
     padding: 0.5rem 1rem;
     border: none;
-    background: linear-gradient(135deg, #000 0%, #555 100%); /* Black gradient buttons */
-    color: white;
+    background: linear-gradient(135deg, #fff 0%, #ccc 100%); /* White/Gray gradient buttons */
+    color: black;
     cursor: pointer;
     transition: background 0.3s, color 0.3s; /* Lägg till en övergångseffekt */
 }
 
 .form-button:hover {
-    background: linear-gradient(135deg, #555 0%, #000 100%); /* Darker black gradient on hover */
-    color: white;
+    background: linear-gradient(135deg, #ccc 0%, #fff 100%); /* Darker white/gray gradient on hover */
+    color: black;
 }
 
 /* Footer Styles */
