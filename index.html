@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roligt prov i samhällskunskap – Årskurs 4</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,122 +13,128 @@
 
 <!-- Frågor -->
 <form id="quizForm">
-
+    <!-- Fråga 1 -->
     <div class="question" id="q1">
         <p>1. Vad är typiskt för en demokrati?</p>
-        <input type="radio" name="q1" value="correct" id="q1a">
-        <label for="q1a">Alla har rätt att rösta och yttrandefrihet</label><br>
         <input type="radio" name="q1" value="wrong" id="q1b">
         <label for="q1b">Endast en person bestämmer</label><br>
-        <div class="info" id="info1" style="display: none;">Tips: I en demokrati har alla rösträtt och yttrandefrihet är en viktig del.</div>
+        <input type="radio" name="q1" value="correct" id="q1a">
+        <label for="q1a">Alla har rätt att rösta och yttrandefrihet</label><br>
     </div>
 
+    <!-- Fråga 2 -->
     <div class="question" id="q2" style="display:none;">
         <p>2. Vad är typiskt för en diktatur?</p>
         <input type="radio" name="q2" value="correct" id="q2a">
         <label for="q2a">En person eller liten grupp har all makt</label><br>
         <input type="radio" name="q2" value="wrong" id="q2b">
         <label for="q2b">Alla får rösta och bestämma</label><br>
-        <div class="info" id="info2" style="display: none;">Tips: I en diktatur har en person eller en liten grupp all makt.</div>
     </div>
 
+    <!-- Fråga 3 -->
     <div class="question" id="q3" style="display:none;">
         <p>3. Hur röstar man i ett demokratiskt samhälle?</p>
         <input type="radio" name="q3" value="correct" id="q3a">
         <label for="q3a">Genom att gå till en vallokal eller rösta via post</label><br>
         <input type="radio" name="q3" value="wrong" id="q3b">
         <label for="q3b">Genom att chefen bestämmer åt dig</label><br>
-        <div class="info" id="info3" style="display: none;">Tips: I en demokrati röstar man antingen i vallokalen eller via post.</div>
     </div>
 
-    <div class="question" id="q4" style="display:none;">
+     <!-- Fråga 4 -->
+     <div class="question" id="q4" style="display:none;">
         <p>4. Vad är skillnaden mellan direkt och representativ demokrati?</p>
         <input type="radio" name="q4" value="correct" id="q4a">
         <label for="q4a">Direkt demokrati innebär att alla röstar om varje fråga, representativ demokrati innebär att man väljer representanter som röstar åt dig</label><br>
         <input type="radio" name="q4" value="wrong" id="q4b">
         <label for="q4b">Det finns ingen skillnad</label><br>
-        <div class="info" id="info4" style="display: none;">Tips: Direkt demokrati innebär att alla röstar, medan representativ demokrati innebär att man väljer representanter som röstar åt en.</div>
     </div>
 
+    <!-- Fråga 5 -->
     <div class="question" id="q5" style="display:none;">
         <p>5. Hur visar du respekt för andras åsikter i en diskussion?</p>
-        <textarea id="q5text" rows="4" cols="50"></textarea>
-        <div class="info" id="info5" style="display: none;">Tips: Tänk på att lyssna, inte avbryta, och visa respekt för andras åsikter.</div>
+        <textarea id="q5text" rows="4"></textarea>
     </div>
 
+    <!-- Fråga 6 -->
     <div class="question" id="q6" style="display:none;">
         <p>6. Hur kan du och dina klasskamrater påverka beslut i skolan?</p>
-        <textarea id="q6text" rows="4" cols="50"></textarea>
-        <div class="info" id="info6" style="display: none;">Tips: Kom ihåg att ni kan påverka genom klassråd eller elevråd.</div>
-    </div>
-		
-		<div class="question" id="q7" style="display:none;">
-        <p>7. Kan du ge ett exempel på hur människor i ett icke-demokratiskt land har lyckats införa demokrati?</p>
-        <textarea id="q7text" rows="4" cols="50"></textarea>
+        <textarea id="q6text" rows="4"></textarea>
     </div>
 
+    <!-- Fråga 7 -->
+    <div class="question" id="q7" style="display:none;">
+        <p>7. Vad innebär det att kompromissa i en grupp?</p>
+        <input type="radio" name="q7" value="wrong" id="q7b">
+        <label for="q7b">Att en person alltid får sin vilja igenom</label><br>
+        <input type="radio" name="q7" value="correct" id="q7a">
+        <label for="q7a">Att alla i gruppen ger upp lite av sina åsikter för att nå en gemensam lösning</label><br>
+    </div>
+
+    <!-- Fråga 8 -->
     <div class="question" id="q8" style="display:none;">
-        <p>8. Vad innebär det att kompromissa i en grupp?</p>
+        <p>8. Vad är en elevrådsrepresentants uppgift?</p>
         <input type="radio" name="q8" value="correct" id="q8a">
-        <label for="q8a">Att alla i gruppen ger upp lite av sina åsikter för att nå en gemensam lösning</label><br>
+        <label for="q8a">Att representera sin klass och föra fram deras åsikter i möten</label><br>
         <input type="radio" name="q8" value="wrong" id="q8b">
-        <label for="q8b">Att en person alltid får sin vilja igenom</label><br>
+        <label for="q8b">Att bestämma allt själv</label><br>
     </div>
 
+    <!-- Fråga 9 -->
     <div class="question" id="q9" style="display:none;">
-        <p>9. Vad är en elevrådsrepresentants uppgift?</p>
-        <input type="radio" name="q9" value="correct" id="q9a">
-        <label for="q9a">Att representera sin klass och föra fram deras åsikter i möten</label><br>
-        <input type="radio" name="q9" value="wrong" id="q9b">
-        <label for="q9b">Att bestämma allt själv</label><br>
+        <p>9. Hur kan du som individ påverka demokratiska beslut i samhället?</p>
+        <textarea id="q9text" rows="4"></textarea>
     </div>
 
+    <!-- Fråga 10 -->
     <div class="question" id="q10" style="display:none;">
-        <p>10. Hur kan du som individ påverka demokratiska beslut i samhället?</p>
-        <textarea id="q10text" rows="4" cols="50"></textarea>
+        <p>10. Vad innebär yttrandefrihet i en demokrati?</p>
+        <input type="radio" name="q10" value="correct" id="q10a">
+        <label for="q10a">Att alla får säga vad de tycker så länge de inte kränker någon</label><br>
+        <input type="radio" name="q10" value="wrong" id="q10b">
+        <label for="q10b">Att endast ledaren får yttra sig</label><br>
     </div>
 
+    <!-- Fråga 11 -->
     <div class="question" id="q11" style="display:none;">
-        <p>11. Vad innebär yttrandefrihet i en demokrati?</p>
+        <p>11. Vad är en folkomröstning?</p>
         <input type="radio" name="q11" value="correct" id="q11a">
-        <label for="q11a">Att alla får säga vad de tycker så länge de inte kränker någon</label><br>
+        <label for="q11a">En omröstning där alla medborgare får delta i ett specifikt beslut</label><br>
         <input type="radio" name="q11" value="wrong" id="q11b">
-        <label for="q11b">Att endast ledaren får yttra sig</label><br>
+        <label for="q11b">En omröstning där bara politiker får rösta</label><br>
     </div>
 
+    <!-- Fråga 12 -->
     <div class="question" id="q12" style="display:none;">
-        <p>12. Vad är en folkomröstning?</p>
-        <input type="radio" name="q12" value="correct" id="q12a">
-        <label for="q12a">En omröstning där alla medborgare får delta i ett specifikt beslut</label><br>
-        <input type="radio" name="q12" value="wrong" id="q12b">
-        <label for="q12b">En omröstning där bara politiker får rösta</label><br>
+        <p>12. Kan du nämna ett land som nyligen har övergått från diktatur till demokrati?</p>
+        <textarea id="q12text" rows="4"></textarea>
     </div>
 
+    <!-- Fråga 13 -->
     <div class="question" id="q13" style="display:none;">
-        <p>13. Kan du nämna ett land som nyligen har övergått från diktatur till demokrati?</p>
-        <textarea id="q13text" rows="4" cols="50"></textarea>
+        <p>13. Hur kan du hjälpa till att stärka demokratin i skolan?</p>
+        <textarea id="q13text" rows="4"></textarea>
     </div>
 
+    <!-- Fråga 14 -->
     <div class="question" id="q14" style="display:none;">
-        <p>14. Hur kan du hjälpa till att stärka demokratin i skolan?</p>
-        <textarea id="q14text" rows="4" cols="50"></textarea>
+        <p>14. Vad innebär det att följa majoritetens beslut även om man inte håller med?</p>
+        <input type="radio" name="q14" value="correct" id="q14a">
+        <label for="q14a">Att man accepterar beslutet men kan fortsätta uttrycka sin åsikt</label><br>
+        <input type="radio" name="q14" value="wrong" id="q14b">
+        <label for="q14b">Att man ignorerar det helt</label><br>
     </div>
-
+    
+    <!-- Fråga 15 -->
     <div class="question" id="q15" style="display:none;">
-        <p>15. Vad innebär det att följa majoritetens beslut även om man inte håller med?</p>
-        <input type="radio" name="q15" value="correct" id="q15a">
-        <label for="q15a">Att man accepterar beslutet men kan fortsätta uttrycka sin åsikt</label><br>
-        <input type="radio" name="q15" value="wrong" id="q15b">
-        <label for="q15b">Att man ignorerar det helt</label><br>
+        <p>15. Hur kan du och dina klasskamrater påverka skolans regler?</p>
+        <textarea id="q15text" rows="4"></textarea>
     </div>
 
-    <!-- Fler frågor som fortsätter... -->
-
-    <!-- Navigeringsknappar -->
-    <button type="button" id="nextButton" onclick="nextQuestion()">Nästa ➡️</button><br>
-    <button type="button" id="prevButton" onclick="prevQuestion()" style="display:none;">⬅️ Tillbaka</button>
-    <button type="button" id="submitButton" style="display:none;" onclick="submitQuiz()">🎉 Rätta!</button>
-
+    <div class="button-container">
+        <button type="button" id="prevButton" onclick="prevQuestion()">⬅️ Tillbaka</button>
+        <button type="button" id="nextButton" onclick="nextQuestion()">Nästa ➡️</button>
+        <button type="button" id="submitButton" style="display:none;" onclick="submitQuiz()">🎉 Rätta!</button>
+    </div>
 </form>
 
 <!-- Resultat -->
@@ -142,152 +149,6 @@
 <!-- Börja om-knapp -->
 <button id="retryButton" style="display:none;" onclick="restartQuiz()">🔄 Börja om</button>
 
-<!-- JavaScript -->
-<script>
-let currentQuestion = 1;
-const totalQuestions = 15; // Justera för att matcha antalet frågor
-let incorrectAnswers = [];
-let startTime;
-
-// Nyckelord för fritextfrågor
-const q5Keywords = ['respekt', 'lyssna', 'inte avbryta'];
-const q6Keywords = ['klassråd', 'elevråd', 'diskutera'];
-
-// Visar frågorna
-function showQuestion(questionNumber) {
-    for (let i = 1; i <= totalQuestions; i++) {
-        document.getElementById('q' + i).style.display = 'none'; // Dölj alla frågor
-    }
-    document.getElementById('q' + questionNumber).style.display = 'block'; // Visa aktuell fråga
-
-    // Hantera navigeringsknappar
-    if (questionNumber === 1) {
-        document.getElementById('prevButton').style.display = 'none';
-    } else {
-        document.getElementById('prevButton').style.display = 'inline-block';
-    }
-    if (questionNumber === totalQuestions) {
-        document.getElementById('nextButton').style.display = 'none';
-        document.getElementById('submitButton').style.display = 'inline-block';
-    } else {
-        document.getElementById('nextButton').style.display = 'inline-block';
-        document.getElementById('submitButton').style.display = 'none';
-    }
-}
-
-function nextQuestion() {
-    if (currentQuestion < totalQuestions) {
-        currentQuestion++;
-        showQuestion(currentQuestion);
-    }
-}
-
-function prevQuestion() {
-    if (currentQuestion > 1) {
-        currentQuestion--;
-        showQuestion(currentQuestion);
-    }
-}
-
-function submitQuiz() {
-    let correctAnswers = 0;
-    incorrectAnswers = [];
-
-    // Bedöm flervalsfrågor
-    for (let i = 1; i <= 4; i++) {
-        const answer = document.querySelector(`input[name="q${i}"]:checked`);
-        if (answer && answer.value === "correct") {
-            correctAnswers++;
-        } else {
-            incorrectAnswers.push(i);
-        }
-    }
-
-    // Fritextfrågor bedöms genom att leta efter nyckelord
-    if (checkFreeText('q5text', q5Keywords)) correctAnswers++; else incorrectAnswers.push(5);
-    if (checkFreeText('q6text', q6Keywords)) correctAnswers++; else incorrectAnswers.push(6);
-
-    const score = (correctAnswers / totalQuestions) * 100;
-
-    // Dölj frågorna och visa resultatet
-    document.getElementById('quizForm').style.display = 'none';
-    const resultElement = document.getElementById('result');
-    resultElement.style.display = 'block';
-    resultElement.textContent = `Du fick ${correctAnswers} av ${totalQuestions} rätt (${score.toFixed(2)}%)`;
-
-    // Visa frågor där användaren svarade fel och låt dem gå tillbaka
-    if (incorrectAnswers.length > 0) {
-        const incorrectList = document.getElementById('incorrectList');
-        incorrectList.innerHTML = ''; // Töm listan
-        incorrectAnswers.forEach(q => {
-            const listItem = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = "#";
-            link.textContent = `Fråga ${q}`;
-            link.onclick = function() {
-                goToIncorrectQuestion(q);
-            };
-            listItem.appendChild(link);
-            incorrectList.appendChild(listItem);
-        });
-        document.getElementById('incorrectQuestions').style.display = 'block';
-    }
-
-    document.getElementById('retryButton').style.display = 'block'; // Visa "Börja om"-knappen
-}
-
-// Funktion för att bedöma fritextsvar
-function checkFreeText(textAreaId, keywords) {
-    const userText = document.getElementById(textAreaId).value.toLowerCase();
-    return keywords.some(keyword => userText.includes(keyword.toLowerCase()));
-}
-
-function restartQuiz() {
-    // Nollställ frågor och visa första frågan
-    document.getElementById('quizForm').style.display = 'block';
-    document.getElementById('result').style.display = 'none';
-    document.getElementById('incorrectQuestions').style.display = 'none';
-    document.getElementById('retryButton').style.display = 'none';
-
-    // Nollställ flervalsfrågor
-    for (let i = 1; i <= totalQuestions; i++) {
-        const answers = document.querySelectorAll(`input[name="q${i}"]`);
-        answers.forEach((answer) => {
-            answer.checked = false;
-        });
-
-        // Nollställ fritextsvar
-        const textArea = document.getElementById(`q${i}text`);
-        if (textArea) {
-            textArea.value = ''; // Nollställ textinmatning
-        }
-
-        // Döljer informationsrutan
-        const infoElement = document.getElementById(`info${i}`);
-        if (infoElement) {
-            infoElement.style.display = 'none';
-        }
-    }
-    currentQuestion = 1;
-    showQuestion(currentQuestion);
-}
-
-// Funktion för att gå tillbaka till en specifik fråga och visa en informationsruta
-function goToIncorrectQuestion(questionNumber) {
-    showQuestion(questionNumber);
-
-    // Visa hjälpande info
-    const infoElement = document.getElementById(`info${questionNumber}`);
-    if (infoElement) {
-        infoElement.style.display = 'block';
-    }
-}
-
-// Visa första frågan när sidan laddas
-window.onload = function() {
-    showQuestion(currentQuestion); // Visa första frågan
-};
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
