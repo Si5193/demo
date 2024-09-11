@@ -3,214 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLE Rör AB</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <title>Roligt prov i samhällskunskap – Årskurs 4</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .facebook-post {
-            width: 100%;
-            max-width: 500px;
-            margin: auto;
-        }
-    </style>
 </head>
 <body>
-    <header id="header" class="header navbar navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home">
-                <img src="https://i.imgur.com/bTsqxe9.png" alt="MLE Rör AB Logotyp" class="header-logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Hem</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">Hur fungerar det?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quote">Offertförfrågan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Om oss</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link social-icon" href="https://www.facebook.com/mleror/?locale=sv_SE" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link social-icon" href="https://www.instagram.com/företagets-sida" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="video-container" id="home">
-        <video autoplay muted loop playsinline id="background-video">
-            <source src="https://videos.pexels.com/video-files/5697985/5697985-uhd_2560_1440_30fps.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="overlay">
-            <img src="https://i.imgur.com/bTsqxe9.png" alt="MLE Rör AB Logotyp" class="hero-logo">
-            <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('how-it-works')">Hur fungerar det?</button>
-            <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('quote')">Begär offert</button>
-        </div>
+
+<h1>🧠 Spännande samhällsquiz! 🌍</h1>
+
+<!-- Frågor -->
+<form id="quizForm">
+
+    <div class="question" id="q1">
+        <p>1. Vad är typiskt för en demokrati?</p>
+        <input type="radio" name="q1" value="correct" id="q1a">
+        <label for="q1a">Alla har rätt att rösta och yttrandefrihet</label><br>
+        <input type="radio" name="q1" value="wrong" id="q1b">
+        <label for="q1b">Endast en person bestämmer</label><br>
+        <div class="info" id="info1" style="display: none;">Tips: I en demokrati har alla rösträtt och yttrandefrihet är en viktig del.</div>
     </div>
-    <main>
-        <section id="how-it-works" class="section fade-in">
-            <div class="container">
-                <h2>Hur fungerar det?</h2>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div class="step-icon">
-                            <i class="material-icons md-36">filter_1</i>
-                        </div>
-                        <h3>Kontakta oss</h3>
-                        <p>Beskriv kortfattat vad du behöver hjälp med och skicka en offertförfrågan.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="step-icon">
-                            <i class="material-icons md-36">filter_2</i>
-                        </div>
-                        <h3>Vi Kontaktar Dig</h3>
-                        <p>Vi återkommer med ett förslag på lösning och en offert för det arbete som ska utföras.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="step-icon">
-                            <i class="material-icons md-36">filter_3</i>
-                        </div>
-                        <h3>Arbetet Utförs</h3>
-                        <p>Vi utför arbetet enligt överenskommelse med hög kvalitet och service.</p>
-                    </div>
-                </div>
-                <div class="text-center mt-4">
-                    <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('quote')">Offert</button>
-                </div>
-            </div>
-        </section>
-        <hr class="section-divider">
-        <section id="quote" class="section fade-in">
-            <div class="container">
-                <h2>Offertförfrågan</h2>
-                <form id="quote-form" class="quote-form" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="name">Namn:</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon:</label>
-                        <input type="text" id="phone" name="phone" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-post:</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Välj område:</label>
-                        <select id="service" name="service" class="form-control" required>
-                            <option value="">Välj ett alternativ</option>
-                            <option value="badrum">Badrum</option>
-                            <option value="värmepump">Värmepump</option>
-                            <option value="golvvärme">Golvvärme</option>
-                            <option value="kök">Kök</option>
-                            <option value="avlopp">Avlopp</option>
-                            <!-- Lägg till fler alternativ här -->
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Beskrivning:</label>
-                        <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="file">Bifoga bild/video:</label>
-                        <input type="file" id="file" name="file" class="form-control" accept="image/*,video/*">
-                    </div>
-                    <button type="submit" class="form-button btn btn-secondary mt-3">Skicka</button>
-                </form>
-            </div>
-        </section>
-        <hr class="section-divider">
-       <section id="projects" class="section" style="margin-top: 50px;"> <!-- Lagt till marginal överst -->
-    <div class="container">
-        <h2>Våra Projekt</h2>
-        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#projectCarousel" data-slide-to="1"></li>
-                <li data-target="#projectCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="facebook-post" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; background:#000;">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmleror%2Fposts%2Fpfbid0yQ1iJRr5bGEdBvt5TAzBrTzJYeSdDCBXk4Eyzw26EdHYN1bqpikGVSjJ7HbZJnA2l&show_text=true&width=500" 
-                            style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>SPA</h5>
-                        <p>Nya rörinstallationer enligt dagens standard</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="facebook-post" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; background:#000;">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmleror%2Fposts%2Fpfbid0m769MQwKCMqWndbR8k1nKYthqzRK5ZRVzEhhnGJqSGKzJbA6K9EvXgs96bGYzCUPl&show_text=true&width=500" 
-                            style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Värmeförzinkat</h5>
-                        <p>Nytt & fräscht med kvalitetsinstallationer</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="facebook-post" style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; background:#000;">
-                        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmleror%2Fposts%2Fpfbid022ouFwfRhoEzscvBUcXYzHBfGPvLXzxE8KAeLAgEkPktaXc2pQcWsYp94GUL1HdCAl&show_text=true&width=500" 
-                            style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Nytt Badrum</h5>
-                        <p>Badrum installerat enl dagens standard</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+
+    <div class="question" id="q2" style="display:none;">
+        <p>2. Vad är typiskt för en diktatur?</p>
+        <input type="radio" name="q2" value="correct" id="q2a">
+        <label for="q2a">En person eller liten grupp har all makt</label><br>
+        <input type="radio" name="q2" value="wrong" id="q2b">
+        <label for="q2b">Alla får rösta och bestämma</label><br>
+        <div class="info" id="info2" style="display: none;">Tips: I en diktatur har en person eller en liten grupp all makt.</div>
     </div>
-</section>
-        <hr class="section-divider">
-        <section id="about" class="section fade-in">
-            <div class="container">
-                <h2>Om oss</h2>
-                <p>MLE Rör AB är ett VVS-företag som erbjuder högkvalitativa tjänster med fokus på bra service och kundnöjdhet. Vi hanterar allt från installationer till reparationer och underhåll av VVS-system.</p>
-                <button class="hero-button btn btn-secondary mt-3" onclick="scrollToSection('contact')">Kontakta oss</button>
-            </div>
-        </section>
-        <hr class="section-divider">
-        <section id="contact" class="section fade-in">
-            <div class="container">
-                <h2>Kontakt</h2>
-                <p>Telefon: 042-123456</p>
-                <p>E-post: <a href="mailto:Info@mle.se">Info@mle.se</a></p>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 MLE Rör AB. Alla rättigheter förbehållna.</p>
-            <p>Kontakt: <a href="tel:042-123456">042-123456</a> | <a href="mailto:Info@mle.se">Info@mle.se</a></p>
-        </div>
-    </footer>
-    <button id="back-to-top" onclick="scrollToTop()"><i class="fas fa-chevron-up"></i></button>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+
+    <div class="question" id="q3" style="display:none;">
+        <p>3. Hur röstar man i ett demokratiskt samhälle?</p>
+        <input type="radio" name="q3" value="correct" id="q3a">
+        <label for="q3a">Genom att gå till en vallokal eller rösta via post</label><br>
+        <input type="radio" name="q3" value="wrong" id="q3b">
+        <label for="q3b">Genom att chefen bestämmer åt dig</label><br>
+        <div class="info" id="info3" style="display: none;">Tips: I en demokrati röstar man antingen i vallokalen eller via post.</div>
+    </div>
+
+    <div class="question" id="q4" style="display:none;">
+        <p>4. Vad är skillnaden mellan direkt och representativ demokrati?</p>
+        <input type="radio" name="q4" value="correct" id="q4a">
+        <label for="q4a">Direkt demokrati innebär att alla röstar om varje fråga, representativ demokrati innebär att man väljer representanter som röstar åt dig</label><br>
+        <input type="radio" name="q4" value="wrong" id="q4b">
+        <label for="q4b">Det finns ingen skillnad</label><br>
+        <div class="info" id="info4" style="display: none;">Tips: Direkt demokrati innebär att alla röstar, medan representativ demokrati innebär att man väljer representanter som röstar åt en.</div>
+    </div>
+
+    <div class="question" id="q5" style="display:none;">
+        <p>5. Hur visar du respekt för andras åsikter i en diskussion?</p>
+        <textarea id="q5text" rows="4" cols="50"></textarea>
+        <div class="info" id="info5" style="display: none;">Tips: Tänk på att lyssna, inte avbryta, och visa respekt för andras åsikter.</div>
+    </div>
+
+    <div class="question" id="q6" style="display:none;">
+        <p>6. Hur kan du och dina klasskamrater påverka beslut i skolan?</p>
+        <textarea id="q6text" rows="4" cols="50"></textarea>
+        <div class="info" id="info6" style="display: none;">Tips: Kom ihåg att ni kan påverka genom klassråd eller elevråd.</div>
+    </div>
+		
+		<div class="question" id="q7" style="display:none;">
+        <p>7. Kan du ge ett exempel på hur människor i ett icke-demokratiskt land har lyckats införa demokrati?</p>
+        <textarea id="q7text" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="question" id="q8" style="display:none;">
+        <p>8. Vad innebär det att kompromissa i en grupp?</p>
+        <input type="radio" name="q8" value="correct" id="q8a">
+        <label for="q8a">Att alla i gruppen ger upp lite av sina åsikter för att nå en gemensam lösning</label><br>
+        <input type="radio" name="q8" value="wrong" id="q8b">
+        <label for="q8b">Att en person alltid får sin vilja igenom</label><br>
+    </div>
+
+    <div class="question" id="q9" style="display:none;">
+        <p>9. Vad är en elevrådsrepresentants uppgift?</p>
+        <input type="radio" name="q9" value="correct" id="q9a">
+        <label for="q9a">Att representera sin klass och föra fram deras åsikter i möten</label><br>
+        <input type="radio" name="q9" value="wrong" id="q9b">
+        <label for="q9b">Att bestämma allt själv</label><br>
+    </div>
+
+    <div class="question" id="q10" style="display:none;">
+        <p>10. Hur kan du som individ påverka demokratiska beslut i samhället?</p>
+        <textarea id="q10text" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="question" id="q11" style="display:none;">
+        <p>11. Vad innebär yttrandefrihet i en demokrati?</p>
+        <input type="radio" name="q11" value="correct" id="q11a">
+        <label for="q11a">Att alla får säga vad de tycker så länge de inte kränker någon</label><br>
+        <input type="radio" name="q11" value="wrong" id="q11b">
+        <label for="q11b">Att endast ledaren får yttra sig</label><br>
+    </div>
+
+    <div class="question" id="q12" style="display:none;">
+        <p>12. Vad är en folkomröstning?</p>
+        <input type="radio" name="q12" value="correct" id="q12a">
+        <label for="q12a">En omröstning där alla medborgare får delta i ett specifikt beslut</label><br>
+        <input type="radio" name="q12" value="wrong" id="q12b">
+        <label for="q12b">En omröstning där bara politiker får rösta</label><br>
+    </div>
+
+    <div class="question" id="q13" style="display:none;">
+        <p>13. Kan du nämna ett land som nyligen har övergått från diktatur till demokrati?</p>
+        <textarea id="q13text" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="question" id="q14" style="display:none;">
+        <p>14. Hur kan du hjälpa till att stärka demokratin i skolan?</p>
+        <textarea id="q14text" rows="4" cols="50"></textarea>
+    </div>
+
+    <div class="question" id="q15" style="display:none;">
+        <p>15. Vad innebär det att följa majoritetens beslut även om man inte håller med?</p>
+        <input type="radio" name="q15" value="correct" id="q15a">
+        <label for="q15a">Att man accepterar beslutet men kan fortsätta uttrycka sin åsikt</label><br>
+        <input type="radio" name="q15" value="wrong" id="q15b">
+        <label for="q15b">Att man ignorerar det helt</label><br>
+    </div>
+
+    <!-- Fler frågor som fortsätter... -->
+
+    <!-- Navigeringsknappar -->
+    <button type="button" id="nextButton" onclick="nextQuestion()">Nästa ➡️</button><br>
+    <button type="button" id="prevButton" onclick="prevQuestion()" style="display:none;">⬅️ Tillbaka</button>
+    <button type="button" id="submitButton" style="display:none;" onclick="submitQuiz()">🎉 Rätta!</button>
+
+</form>
+
+<!-- Resultat -->
+<div id="result" class="result" style="display:none;"></div>
+
+<!-- Frågor att öva på -->
+<div id="incorrectQuestions" style="display:none;">
+    <h2>Frågor att öva på</h2>
+    <ul id="incorrectList"></ul>
+</div>
+
+<!-- Börja om-knapp -->
+<button id="retryButton" style="display:none;" onclick="restartQuiz()">🔄 Börja om</button>
+
+<!-- JavaScript -->
+<script>
+let currentQuestion = 1;
+const totalQuestions = 15; // Justera för att matcha antalet frågor
+let incorrectAnswers = [];
+let startTime;
+
+// Nyckelord för fritextfrågor
+const q5Keywords = ['respekt', 'lyssna', 'inte avbryta'];
+const q6Keywords = ['klassråd', 'elevråd', 'diskutera'];
+
+// Visar frågorna
+function showQuestion(questionNumber) {
+    for (let i = 1; i <= totalQuestions; i++) {
+        document.getElementById('q' + i).style.display = 'none'; // Dölj alla frågor
+    }
+    document.getElementById('q' + questionNumber).style.display = 'block'; // Visa aktuell fråga
+
+    // Hantera navigeringsknappar
+    if (questionNumber === 1) {
+        document.getElementById('prevButton').style.display = 'none';
+    } else {
+        document.getElementById('prevButton').style.display = 'inline-block';
+    }
+    if (questionNumber === totalQuestions) {
+        document.getElementById('nextButton').style.display = 'none';
+        document.getElementById('submitButton').style.display = 'inline-block';
+    } else {
+        document.getElementById('nextButton').style.display = 'inline-block';
+        document.getElementById('submitButton').style.display = 'none';
+    }
+}
+
+function nextQuestion() {
+    if (currentQuestion < totalQuestions) {
+        currentQuestion++;
+        showQuestion(currentQuestion);
+    }
+}
+
+function prevQuestion() {
+    if (currentQuestion > 1) {
+        currentQuestion--;
+        showQuestion(currentQuestion);
+    }
+}
+
+function submitQuiz() {
+    let correctAnswers = 0;
+    incorrectAnswers = [];
+
+    // Bedöm flervalsfrågor
+    for (let i = 1; i <= 4; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+        if (answer && answer.value === "correct") {
+            correctAnswers++;
+        } else {
+            incorrectAnswers.push(i);
+        }
+    }
+
+    // Fritextfrågor bedöms genom att leta efter nyckelord
+    if (checkFreeText('q5text', q5Keywords)) correctAnswers++; else incorrectAnswers.push(5);
+    if (checkFreeText('q6text', q6Keywords)) correctAnswers++; else incorrectAnswers.push(6);
+
+    const score = (correctAnswers / totalQuestions) * 100;
+
+    // Dölj frågorna och visa resultatet
+    document.getElementById('quizForm').style.display = 'none';
+    const resultElement = document.getElementById('result');
+    resultElement.style.display = 'block';
+    resultElement.textContent = `Du fick ${correctAnswers} av ${totalQuestions} rätt (${score.toFixed(2)}%)`;
+
+    // Visa frågor där användaren svarade fel och låt dem gå tillbaka
+    if (incorrectAnswers.length > 0) {
+        const incorrectList = document.getElementById('incorrectList');
+        incorrectList.innerHTML = ''; // Töm listan
+        incorrectAnswers.forEach(q => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = "#";
+            link.textContent = `Fråga ${q}`;
+            link.onclick = function() {
+                goToIncorrectQuestion(q);
+            };
+            listItem.appendChild(link);
+            incorrectList.appendChild(listItem);
+        });
+        document.getElementById('incorrectQuestions').style.display = 'block';
+    }
+
+    document.getElementById('retryButton').style.display = 'block'; // Visa "Börja om"-knappen
+}
+
+// Funktion för att bedöma fritextsvar
+function checkFreeText(textAreaId, keywords) {
+    const userText = document.getElementById(textAreaId).value.toLowerCase();
+    return keywords.some(keyword => userText.includes(keyword.toLowerCase()));
+}
+
+function restartQuiz() {
+    // Nollställ frågor och visa första frågan
+    document.getElementById('quizForm').style.display = 'block';
+    document.getElementById('result').style.display = 'none';
+    document.getElementById('incorrectQuestions').style.display = 'none';
+    document.getElementById('retryButton').style.display = 'none';
+
+    // Nollställ flervalsfrågor
+    for (let i = 1; i <= totalQuestions; i++) {
+        const answers = document.querySelectorAll(`input[name="q${i}"]`);
+        answers.forEach((answer) => {
+            answer.checked = false;
+        });
+
+        // Nollställ fritextsvar
+        const textArea = document.getElementById(`q${i}text`);
+        if (textArea) {
+            textArea.value = ''; // Nollställ textinmatning
+        }
+
+        // Döljer informationsrutan
+        const infoElement = document.getElementById(`info${i}`);
+        if (infoElement) {
+            infoElement.style.display = 'none';
+        }
+    }
+    currentQuestion = 1;
+    showQuestion(currentQuestion);
+}
+
+// Funktion för att gå tillbaka till en specifik fråga och visa en informationsruta
+function goToIncorrectQuestion(questionNumber) {
+    showQuestion(questionNumber);
+
+    // Visa hjälpande info
+    const infoElement = document.getElementById(`info${questionNumber}`);
+    if (infoElement) {
+        infoElement.style.display = 'block';
+    }
+}
+
+// Visa första frågan när sidan laddas
+window.onload = function() {
+    showQuestion(currentQuestion); // Visa första frågan
+};
+</script>
+
 </body>
 </html>
